@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Renuka Chakradhari</title>
+  
+    <!-- Bootstrap CSS CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  
+    <!-- Bootstrap Icons CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+  
+    <!-- AOS library CSS file CDN link for animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+    <!-- jQuery CDN link (must be before your custom scripts) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+    <!-- EmailJS CDN link -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+  </head>
+  
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+       <!-- Back to Contact Button -->
+       <button
+       id="btn-contact"
+       onclick="scrollToContactSection()"
+       style="border-radius: 50px; padding: 10px 20px; position: fixed; bottom: 20px; right: 20px; z-index: 1000;"
+     >
+ Contact </button>
+     
+
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Renuka Chakradhari</span>
+          </h2>
+          <p class="text-muted">
+            I'm A Fresher having Knowledge of
+            creating website with fully responsive Also with backend part too.
+          </p>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <!-- <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images\banner-01.jpg" class="img-fluid" alt="" />
+        </div> -->
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                I create visually appealing and responsive web designs,
+                 focusing on user-friendly layouts and seamless experiences across devices.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted">
+                I build dynamic websites using HTML, CSS, JavaScript, and React.js, ensuring clean, 
+                efficient code for high-performance applications.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="text-muted">
+                I excel at debugging, quickly identifying and resolving
+                 issues to improve performance and ensure smooth functionality in web applications.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">HTML</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">CSS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">ReactJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+              I possess strong analytical skills to identify issues and develop solutions, 
+              coupled with effective communication for engaging diverse audiences. With excellent time management, I consistently meet deadlines while leading community health initiatives and leveraging social media for awareness. My technical expertise includes HTML, CSS, JavaScript, React.js, and API integration, allowing me to contribute effectively in a tech-focused role.
+            </p>
+
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+              href="https://drive.google.com/file/d/11dZV6R0VYIhQg1_lbF0RaYZO-foSUJuy/view?usp=sharing"
+              target="_blank"
+              style="text-decoration: none; color: #fff;"
+          >Download CV</a>
+          
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/2048game.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">2048 Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://khelo-to-jane.netlify.app/" class="live-preview-btn link" target="_blank">Live Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images\Clone of Flipkart.png  "
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Flipkart</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a href=" https://clone-of-flikart.netlify.app/flip.html" class="live-preview-btn link" target="_blank">Live Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images\Weather App.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Weather App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a href=" https://mausam-dekhe.netlify.app/  " class="live-preview-btn link" target="_blank">Live Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images\book Library.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Book Library</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">App</span
+                ><br />
+                <a href="https://search-your-book-here.netlify.app/login.html" class="live-preview-btn link" target="_blank">Live Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="  images\Calculator.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Calculator</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://addition-substraction.netlify.app/" class="live-preview-btn link" target="_blank">Live Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images\Music App.png   "
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Music App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+                <a href="https://cheerful-douhua-357cf1.netlify.app/ " class="live-preview-btn link" target="_blank">Live Preview</a>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/2048game.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Renuka Chakradhari</small
+              ><span class="ms-3">May 8,2023</span>
+              <h4 class="card-title">
+                <a href="">Engaging Memory Card Game</a>
+              </h4>
+              <p class="text-muted">
+                Built a Memory Card Game with HTML, CSS, and JavaScript, featuring smooth animations and a fun, interactive design for all ages.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images\book Library.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Renuka Chakradhari</small
+              ><span class="ms-3">August 13,2023</span>
+              <h4 class="card-title">
+                <a href="">Interactive Online Library App</a>
+              </h4>
+              <p class="text-muted">
+                Built an Online Library App with HTML, CSS, JavaScript, and APIs for easy book browsing and real-time updates.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images\Weather App.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Renuka Chakradhari</small
+              ><span class="ms-3">August 21,2023</span>
+              <h4 class="card-title">
+                <a href="">Advanced Weather App with Real-time Data</a>
+              </h4>
+              <p class="text-muted">
+                Created a Weather App with HTML, CSS, and JavaScript, providing real-time updates on temperature, humidity, and conditions in a clean, responsive UI. 
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <!-- <img src="images/2048game.png" class="img-fluid" alt=""> -->
+                </div>
+                <div class="content mt-3">
+                  <small>By Renuka Chakradhari</small
+                    ><span class="text-muted ms-2">May 8,2023</span>
+                  <h4 class="card-title mt-3">Engaging Memory Card Game</h4>
+                  <div class="social-links mt-4">
+                    <button href="#" class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button href="#" class="rounded-pill github">
+                      <i class="bi bi-github"></i>
+                    </button>
+                    <button href="#" class="rounded-pill telegram">
+                      <i class="bi bi-telegram"></i>
+                    </button>
+                  </div>
+                  
+                  <p class="text-muted mt-3">Created an exciting Memory Card Game using HTML, CSS, and JavaScript, designed to challenge and entertain users with a fun, interactive experience. The game features visually appealing cards and smooth animations that make gameplay enjoyable and immersive. With responsive design and engaging visuals, this game showcases creativity, attention to detail, and a strong command of frontend development. Perfect for players of all ages, it provides both a fun and challenging experience.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images\book Library.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Renuka Chakradhari</small
+                    ><span class="text-muted ms-2 ms-md-0">August 13,2023</span>
+                  <h4 class="card-title mt-3">Interactive Online Library App</h4>
+                  <div class="social-links mt-4">
+                    <button href="#" class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button href="#" class="rounded-pill github">
+                      <i class="bi bi-github"></i>
+                    </button>
+                    <button href="#" class="rounded-pill telegram">
+                      <i class="bi bi-telegram"></i>
+                    </button>
+                  </div>
+                  
+                  <p class="text-muted mt-3">Developed a sophisticated Online Library App using HTML, CSS, JavaScript, and API integration to create a dynamic and user-friendly experience. This app allows users to browse, search, and explore a diverse collection of books with real-time data updates. Featuring a clean and intuitive interface, the app enhances user engagement and offers a seamless online library experience, showcasing both technical skills and a keen eye for detail.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images\Weather App.png " class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Renuka Chakradhari</small
+                    ><span class="text-muted ms-2 ms-md-0">August 13,2023</span>
+                  <h4 class="card-title mt-3">Advanced Weather App with Real-time Data</h4>
+                  <div class="social-links mt-4">
+                    <button href="#" class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button href="#" class="rounded-pill github">
+                      <i class="bi bi-github"></i>
+                    </button>
+                    <button href="#" class="rounded-pill telegram">
+                      <i class="bi bi-telegram"></i>
+                    </button>
+                  </div>
+                  
+                  <p class="text-muted mt-3">Designed an impressive Weather App using HTML, CSS, and JavaScript, incorporating API keys for real-time weather data. The app provides users with instant weather updates, including temperature, humidity, and conditions for various locations. With a clean and responsive UI, this app offers a smooth and engaging user experience, showcasing professional design and attention to detail.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+
+
+
+
+
+   <!-- contact section starts -->
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+
+  <div class="row justify-content-evenly mt-5">
+    <!-- Contact details section -->
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <!-- Address -->
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>Nakulnar, Dantewada, (C.G.) India</p>
+        </div>
+      </div>
+      <!-- Phone -->
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>+91 8305270233</p>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-send-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>renukachakradhari23@navgurukul.org</p>
+        </div>
+      </div>
+    </div>
+
+<!-- Contact Form Section -->
+<div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+  <div class="contact-form">
+    <form id="contact-form">
+      <!-- Name input -->
+      <div class="mb-3">
+        <input type="text" name="user_name" class="form-control" placeholder="Name" required />
+      </div>
+      <!-- Email input -->
+      <div class="mb-3">
+        <input type="email" name="user_email" class="form-control" placeholder="E-mail" required />
+      </div>
+      <!-- Phone input -->
+      <div class="mb-3">
+        <input type="text" name="user_phone" class="form-control" placeholder="Mobile No." required />
+      </div>
+      <!-- Message textarea -->
+      <div class="mb-3">
+        <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+
+    <!-- footer section starts  -->
+<footer class="text-center text-muted py-4">
+  <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+  <div class="link-group mt-5" data-aos="fade-up">
+    <a href="#home">Home</a>
+    <div class="vr"></div>
+    <a href="#about">About</a>
+    <div class="vr"></div>
+    <a href="#service">Service</a>
+    <div class="vr"></div>
+    <a href="#portfolio">Portfolio</a>
+    <div class="vr"></div>
+    <a href="#blog">Blog</a>
+    <div class="vr"></div>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="social-links mt-5" data-aos="fade-up">
+    <a href=" https://www.linkedin.com/in/renuka-chakradhari-481274301/" target="_blank" class="rounded-pill mx-3">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://github.com/RChakradharii" target="_blank" class="rounded-pill mx-3">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://web.telegram.org/k/" target="_blank" class="rounded-pill mx-3">
+      <i class="bi bi-telegram"></i>
+    </a>
+  </div>
+  <hr class="text-muted my-4" />
+
+  <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
+</footer>
+<!-- footer section ends here -->
+
+<!-- bootstrap javascript cdn link  -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"
+></script>
+
+<!-- AOS library javascript link  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  // initializing AOS library
+  AOS.init({
+    duration: 1000,
+    offset: 50,
+  });
+</script>
+<!-- custom js file linking -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
